@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	id="cordova-plugin-admob-mediation-adbuddiz"
+	version="1.0.0">
+      
+    <name>AdMob Mediation Adapter for AdBuddiz</name>
+	<description>AdMob Mediation Adapter for AdBuddiz</description>
+	<author>Sylvain Brejeon</author>
+	<keywords>admob,mediation,adbuddiz</keywords>
+	<license>MIT</license>
+
+	<engines>
+	    <engine name="cordova" version=">=3.0" />
+	</engines>
+
+    <platform name="android">
+		<config-file target="AndroidManifest.xml" parent="/manifest">
+            <uses-permission android:name="android.permission.INTERNET"/>
+			<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+        </config-file>
+		<config-file target="AndroidManifest.xml" parent="/manifest/application">
+			<activity android:name="com.purplebrain.adbuddiz.sdk.AdBuddizActivity" android:theme="@android:style/Theme.Translucent" />
+        </config-file>
+		<source-file src="AdBuddiz-AdMob-Java-3.1.11.jar" target-dir="libs" />
+     </platform>
+
+     <platform name="ios">    
+		<framework src="AdBuddiz.framework" custom="true" />
+		<framework src="AdSupport.framework"/>
+		<framework src="StoreKit.framework"/>
+        <framework src="AVFoundation.framework"/>
+	</platform>
+
+</plugin>
