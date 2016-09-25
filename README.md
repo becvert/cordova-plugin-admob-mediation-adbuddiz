@@ -29,13 +29,21 @@ and
 
 [Set Up Admob Mediation](https://support.google.com/admob/answer/3124703?hl=en) with a CustomEvent:
 
-#### Android 
-In the Class Name field, enter: com.purplebrain.adbuddiz.sdk.admob.AdBuddizCustomEventInterstitial
+For Android, In the Class Name field, enter: 
+```bash
+com.purplebrain.adbuddiz.sdk.admob.AdBuddizCustomEventInterstitial
+```
 
-#### iOS
-In the Class Name field, enter: AdBuddizGADCustomEventInterstitial
+For iOS, In the Class Name field, enter:
+```bash
+AdBuddizGADCustomEventInterstitial
+```
 
-In the Label field, enter: AdBuddiz
+In the Label field, enter: 
+```bash
+AdBuddiz
+```
+
 In the Parameter field, enter the publisher key of your application.
 
 Keep using the API of your favorite Admob cordova plugin!
