@@ -10,21 +10,6 @@ In your application project directory:
 cordova plugin add cordova-plugin-admob-mediation-adbuddiz
 ```
 
-on iOS, in the  AppDelegate.m file add:
-
-```bash
-#import <AdBuddiz/AdBuddizGADCustomEventInterstitial.h>
-```
-
-and
-
-```bash
-- (void)applicationDidBecomeActive:(UIApplication *)application
-{
-    [AdBuddizGADCustomEventInterstitial class]; //Dynamically load the class
-}
-```
-
 ## Usage ##
 
 [Set Up Admob Mediation](https://support.google.com/admob/answer/3124703?hl=en) with a CustomEvent:
@@ -49,6 +34,9 @@ In the Parameter field, enter the publisher key of your application.
 Keep using the API of your favorite Admob cordova plugin!
 
 ## Changelog ##
+
+#### Version 1.1.0: 
+- [iOS] no need to edit AppDelegate.m
 
 #### Version 1.0.0: 
 - AdBuddiz SDK 3.1.11
