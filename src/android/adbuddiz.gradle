@@ -1,0 +1,8 @@
+dependencies {
+    compile 'com.purplebrain.adbuddiz.sdk:AdBuddiz-AdMob-Java:3.+'
+}
+repositories {
+    maven {
+        url 'http://repository.adbuddiz.com/maven'
+    }
+}

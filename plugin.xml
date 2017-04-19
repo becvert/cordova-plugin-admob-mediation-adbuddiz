@@ -3,7 +3,7 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
     xmlns:android="http://schemas.android.com/apk/res/android"
     id="cordova-plugin-admob-mediation-adbuddiz"
-    version="1.1.0">
+    version="1.2.0">
 
     <name>AdMob Mediation Adapter for AdBuddiz</name>
     <description>AdMob Mediation Adapter for AdBuddiz</description>
@@ -23,7 +23,7 @@
         <config-file target="AndroidManifest.xml" parent="/manifest/application">
             <activity android:name="com.purplebrain.adbuddiz.sdk.AdBuddizActivity" android:theme="@android:style/Theme.Translucent" />
         </config-file>
-        <source-file src="AdBuddiz-AdMob-Java-3.1.11.jar" target-dir="libs" />
+        <framework src="src/android/adbuddiz.gradle" custom="true" type="gradleReference"/>
      </platform>
 
      <platform name="ios">
