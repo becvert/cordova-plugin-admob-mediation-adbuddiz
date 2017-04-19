@@ -35,6 +35,9 @@ Keep using the API of your favorite Admob cordova plugin!
 
 ## Changelog ##
 
+#### Version 1.2.0: 
+- [Android] Removing jar. Use maven instead
+
 #### Version 1.1.0: 
 - [iOS] no need to edit AppDelegate.m
 
